@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TableServe — Sign In</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="signin">
+    <main class="d-flex flex-column gap-4 justify-content-center align-items-center min-vh-100">
+      <svg xmlns="http://www.w3.org/2000/svg" width="98" height="40" viewBox="0 0 78 32" fill="none">
+        <path d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z" fill="#FF7A00" />
+        <path d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z" fill="#FF9736" />
+        <path d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z" fill="#FFBC7D" />
+      </svg>
+      <span class="mx-2 fw-semibold" style="color: #FF7A00">TableServe</span>
+      <div class="card w-25 h-25 p-4">
+        <h4 class="card-title">Sign in</h4>
+        <form class="d-flex flex-column">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input id="username" type="text" class="form-control" />
+          </div>
+          <div class="mb-1">
+            <label for="password" class="form-label">Password</label>
+            <input id="password" type="password" class="form-control" />
+          </div>
+          <div class="mb-4 form-text">
+            <a href="#">Forgot It?</a>
+          </div>
+          <div class="mb-3 d-grid gap-2">
+            <a href="/orders.html" class="btn btn-lg btn-primary">Sign in</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

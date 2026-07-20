@@ -1,0 +1,17 @@
+{
+  "name": "tableserve-design",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0",
+    "vite-plugin-handlebars": "^2.0.0"
+  }
+}

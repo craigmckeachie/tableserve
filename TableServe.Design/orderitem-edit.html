@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TableServe — Edit Order Item</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    {{> header}}
+    <main class="d-flex">
+      {{> nav}}
+      <section class="content p-4 flex-grow-1">
+        <div class="d-flex justify-content-between pb-4 mb-5 border-bottom border-2">
+          <h2>Edit Order Item</h2>
+        </div>
+
+        <form class="form w-50">
+          <div class="card p-4">
+            <h5 class="card-title"><strong>Item</strong></h5>
+            <div class="mb-3">
+              <label for="menuItemId" class="form-label">Menu Item</label>
+              <select id="menuItemId" class="form-select">
+                <option value="0">Select...</option>
+                <option value="1">Loaded Nachos</option>
+                <option value="2">Mozzarella Sticks</option>
+                <option value="3">Buffalo Wings</option>
+                <option value="4">Grilled Salmon</option>
+                <option value="5">Ribeye Steak</option>
+                <option value="6">Chicken Alfredo</option>
+                <option value="7" selected>Garlic Fries</option>
+                <option value="8">Side Caesar Salad</option>
+                <option value="9">Chocolate Lava Cake</option>
+                <option value="10">New York Cheesecake</option>
+                <option value="11">Iced Tea</option>
+                <option value="12">Craft Lemonade</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="price" class="form-label">Price</label>
+              <div class="form-label">$5.49</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="quantity" class="form-label">Quantity</label>
+              <input id="quantity" type="number" class="form-control" value="2" />
+            </div>
+
+            <div class="mb-3">
+              <label for="notes" class="form-label">Notes</label>
+              <input id="notes" type="text" class="form-control" placeholder="Enter any notes for this item (optional)" />
+            </div>
+
+            <div class="mb-3">
+              <label for="amount" class="form-label">Amount</label>
+              <div class="form-label">$10.98</div>
+            </div>
+
+            <div class="d-flex justify-content-end mt-4">
+              <a href="/order-detail.html" class="btn btn-outline-primary me-2">Cancel</a>
+              <button type="submit" class="btn btn-primary">
+                <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
+                  <use href="/assets/bootstrap-icons.svg#save" />
+                </svg>
+                Save item
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

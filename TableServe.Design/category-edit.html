@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TableServe — Edit Category</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    {{> header}}
+    <main class="d-flex">
+      {{> nav}}
+      <section class="content p-4 flex-grow-1">
+        <div class="d-flex justify-content-between pb-4 mb-5 border-bottom border-2">
+          <h2>Edit Category</h2>
+        </div>
+
+        <form class="d-flex flex-wrap w-75 gap-2">
+          <div class="row-1 d-flex flex-row w-100 gap-4">
+            <div class="mb-3 w-75">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" type="text" class="form-control" value="Appetizers" />
+            </div>
+            <div class="mb-3 w-25">
+              <label for="sortOrder" class="form-label">Sort Order</label>
+              <input id="sortOrder" type="number" class="form-control" value="1" />
+            </div>
+          </div>
+          <div class="row-3 d-flex flex-row justify-content-end w-100 gap-4">
+            <div class="d-flex justify-content-end mt-4">
+              <a href="/categories.html" class="btn btn-outline-primary me-2">Cancel</a>
+              <button type="submit" class="btn btn-primary">
+                <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
+                  <use href="/assets/bootstrap-icons.svg#save" />
+                </svg>
+                Save category
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

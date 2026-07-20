@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TableServe — Edit Order</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    {{> header}}
+    <main class="d-flex">
+      {{> nav}}
+      <section class="content p-4 flex-grow-1">
+        <div class="d-flex justify-content-between pb-4 mb-5 border-bottom border-2">
+          <h2>Edit Order</h2>
+        </div>
+
+        <form class="form">
+          <div class="detail-header">
+            <div class="column1 w-75">
+              <div class="mb-3">
+                <label for="tableNumber" class="form-label">Table Number</label>
+                <input id="tableNumber" type="number" class="form-control" value="3" />
+              </div>
+              <div class="mb-3">
+                <label for="notes" class="form-label">Notes</label>
+                <textarea id="notes" class="form-control" rows="3">Extra napkins</textarea>
+              </div>
+            </div>
+            <div class="column2 w-50">
+              <div class="mb-3">
+                <label for="status" class="form-label">Status</label>
+                <select id="status" class="form-select">
+                  <option value="PLACED">Placed</option>
+                  <option value="PREPARING" selected>Preparing</option>
+                  <option value="READY">Ready</option>
+                  <option value="SERVED">Served</option>
+                  <option value="CANCELLED">Cancelled</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="staffId" class="form-label">Staff</label>
+                <select id="staffId" disabled class="form-select">
+                  <option value="">Select...</option>
+                  <option value="1">Jordan Reyes</option>
+                  <option value="2" selected>Casey Nguyen</option>
+                  <option value="3">Morgan Ellis</option>
+                  <option value="4">Riley Thompson</option>
+                  <option value="5">Avery Brooks</option>
+                  <option value="6">Peyton Diaz</option>
+                  <option value="7">Sam Coleman</option>
+                  <option value="8">Taylor Brennan</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row justify-content-end w-100 gap-4">
+            <div class="d-flex justify-content-end mt-4">
+              <a href="/orders.html" class="btn btn-outline-primary me-2">Cancel</a>
+              <button type="submit" class="btn btn-primary">
+                <svg class="bi pe-none me-2" width="16" height="16" fill="#FFFFFF">
+                  <use href="/assets/bootstrap-icons.svg#save" />
+                </svg>
+                Save order
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
